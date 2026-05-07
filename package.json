@@ -1,0 +1,14 @@
+{
+  "name": "pipebot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WhatsApp AI sales agent for Papas Pipe + real-time agent dashboard",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "install:all": "npm install --prefix backend",
+    "postinstall": "npm install --prefix backend"
+  }
+}

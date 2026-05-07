@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PipeBot · Iniciar sesión</title>
+<link rel="stylesheet" href="/styles/variables.css" />
+<link rel="stylesheet" href="/styles/dashboard.css" />
+<script src="/config.js"></script>
+</head>
+<body class="auth-body">
+  <main class="auth-card">
+    <div class="auth-brand">
+      <div class="brand-logo">🍿</div>
+      <h1>PipeBot</h1>
+      <p class="muted">Panel de agentes</p>
+    </div>
+    <form id="loginForm" class="auth-form">
+      <label>
+        <span>Correo</span>
+        <input type="email" name="email" autocomplete="username" required />
+      </label>
+      <label>
+        <span>Contraseña</span>
+        <input type="password" name="password" autocomplete="current-password" required />
+      </label>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+      <p id="loginError" class="auth-error" role="alert"></p>
+    </form>
+  </main>
+  <script type="module" src="/scripts/login.js"></script>
+</body>
+</html>

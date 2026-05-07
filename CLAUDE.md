@@ -77,6 +77,17 @@ Key tables:
 - `order_items` — product_name, quantity, unit_price
 - `agents` — role (admin/agent/viewer)
 
+## Product Catalog (Fixed — Never Invent Products or Prices)
+
+| Category | Products | Size | Price COP |
+|----------|----------|------|-----------|
+| Papas | Limón, Limón Pimienta, Natural, Mayonesa, BBQ Picante | 80g | $2.650 |
+| Platanitos | Natural, Limón | 85g | $2.650 |
+| Chicharrones | Natural, Limón | — | $2.650 |
+| Mixto (papa+platanito+chicharrón) | Limón, Natural | 80g | $2.650 |
+| Crispetas | Dulces, Sal, Mixtas | 50g | $2.300 |
+| Maní | Dulce, Salado, Mixto, Sal Pasas | — | $1.000 |
+
 ## Bot State Machine
 
 `GREETING → DATA_COLLECTION (new) | ORDER_TAKING (returning) → ORDER_VALIDATION → DELIVERY_CONFIRMATION → PAYMENT_METHOD_SELECTION → ORDER_CONFIRMATION → FINAL_CONFIRMATION → ORDER_PLACED → CLOSING`
